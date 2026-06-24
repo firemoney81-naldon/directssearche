@@ -1,23 +1,911 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+
+
+    <!-- JSON-LD Structured Data for Search Engine Optimization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://yourdomain.com/car-insurance-expiration-date"
+      },
+      "headline": "2026년 자동차보험료 만기일 조회 및 갱신 기간 다이렉트 비교 가이드",
+      "image": "https://via.placeholder.com/1200x630/1E293B/fff?text=자동차보험료+만기일+비교+가이드",
+      "datePublished": "2026-06-24T09:00:00+09:00",
+      "dateModified": "2026-06-24T09:00:00+09:00",
+      "author": {
+        "@type": "Organization",
+        "name": "다이렉트 자동차보험 비교분석 센터"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "다이렉트 자동차보험 비교분석 센터",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://via.placeholder.com/600x60/1E293B/fff?text=보험비교로고"
+        }
+      },
+      "description": "자동차보험료 만기일 이전에 반드시 알아두어야 할 최적의 갱신 시기, 연령별/모델별 평균 금액 분석 및 가입 시 현금지원, 상품권 이벤트 혜택을 극대화하는 실전 노하우를 담은 가이드입니다.",
+      "articleBody": "자동차 소유자라면 매년 다가오는 자동차보험료 만기일을 철저히 관리해야 합니다. 보험 갱신 기간을 놓칠 경우 과태료가 부과될 뿐만 아니라 무보험 상태에서의 사고 시 막대한 법적, 경제적 책임을 지게 됩니다. 본 가이드에서는 2026년 개정된 요율을 바탕으로 국산 및 수입 대표 모델들의 연령별 예상 비용을 비교하고, 각 다이렉트 브랜드 업체의 혜택을 극대화하여 가장 저렴한곳을 찾는 방법을 상세히 설명합니다."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "자동차보험료 만기일은 언제부터 조회가 가능하며 가장 이상적인 갱신 시기는 언제인가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "자동차보험 만기일 조회 및 갱신은 통상 만기일이 도래하기 30일 전부터 가능합니다. 이 시기부터 국내 다양한 브랜드의 다이렉트 사이트 및 핀테크 플랫폼에서 예상 견적 계산기를 활용하여 요율을 비교할 수 있습니다. 혜택이 가장 집중되는 시기이므로 만기 1~2주 전에 가입을 완료하는 것이 안정적입니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "만기일을 하루라도 넘기면 과태료는 어떻게 부과되나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "만기일 다음 날부터 즉시 미가입 기간에 따른 과태료가 산정됩니다. 개인용 차량 기준 대인배상 I은 초과 기간 10일 이내인 경우 1만 원, 이후 하루당 6,000원씩 추가되며 대물배상의 경우 10일 이내 5,000원, 이후 하루당 2,000원씩 누적되어 최대 90만 원까지 과태료가 부과될 수 있습니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "다이렉트 자동차보험 가입 시 현금지원 및 사은품 혜택을 많이 받는 팁은 무엇인가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "네이버페이, 카카오톡, 토스 등 주요 플랫폼 제휴 이벤트를 경유하여 견적을 조회하고 신규 가입을 진행하는 경우, 평균 1만 원에서 최대 3만 원 상당의 네이버페이 포인트나 모바일 상품권, 주유권 등의 사은품을 제공받을 수 있습니다. 카드사 청구할인 및 캐시백 이벤트와 중복 적용이 가능한 경우가 많으므로 꼼꼼히 확인해야 합니다."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #1E293B; /* 차분하고 전문적인 슬레이트 네이비 */
+            --secondary-color: #0D9488; /* 신뢰감을 주는 딥 틸 블루 */
+            --accent-color: #EA580C; /* 명확한 강조를 돕는 오렌지 */
+            --text-main: #0F172A; /* 가독성 높은 차콜 블랙 */
+            --text-muted: #475569; /* 부드러운 회색조 본문 */
+            --bg-light: #F8FAFC; /* 시각적 피로가 적은 부드러운 아이보리빛 배경 */
+            --bg-card: #FFFFFF; /* 백색 카드 배경 */
+            --border-color: #E2E8F0; /* 깔끔한 경계선 */
+            --table-header: #F1F5F9; /* 테이블 헤더 */
+            --table-accent: #FFFBEB; /* 연한 옐로우 강조 행 */
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: var(--primary-color);
+            padding: 25px 0;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #FFFFFF;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        header h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* 서브 비주얼 / 타이틀 영역 */
+        .intro-banner {
+            background-color: #0F172A;
+            color: #FFFFFF;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .intro-banner h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        .intro-banner p {
+            font-size: 1.15rem;
+            color: #94A3B8;
+            max-width: 750px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        /* 검색 유도용 대화형 계산기 폼 영역 (체류시간 증대 목적) */
+        .interactive-section {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 40px;
+            margin: -40px auto 40px auto;
+            max-width: 680px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+
+        .interactive-section h3 {
+            color: var(--primary-color);
+            font-size: 1.45rem;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 700;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 15px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 640px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .form-group input, .form-group select {
+            padding: 12px;
+            border: 1px solid #CBD5E1;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            background-color: #FFFFFF;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+        }
+
+        .calc-btn {
+            grid-column: 1 / -1;
+            background-color: var(--secondary-color);
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .calc-btn:hover {
+            background-color: #0F766E;
+        }
+
+        /* 결과 표시창 */
+        .calc-result {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #F0FDF4;
+            border: 1px solid #BBF7D0;
+            border-radius: 8px;
+            color: #166534;
+        }
+
+        .calc-result h4 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        /* 본문 콘텐츠 레이아웃 */
+        .content-wrapper {
+            padding: 50px 0;
+        }
+
+        .main-content h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .main-content h3 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-top: 35px;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+
+        .main-content h4 {
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .main-content p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .main-content ul, .main-content ol {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+
+        .main-content li {
+            margin-bottom: 10px;
+        }
+
+        /* 테이블 디자인 */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 30px 0;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        th {
+            background-color: var(--table-header);
+            color: var(--primary-color);
+            font-weight: 700;
+            padding: 15px 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        td {
+            padding: 15px 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .highlight-row {
+            background-color: var(--table-accent);
+            font-weight: bold;
+        }
+
+        .highlight-text {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* 키워드 클라우드 스타일 */
+        .keyword-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .keyword-box h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .keyword-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .keyword-list li {
+            background-color: #F1F5F9;
+            color: var(--text-muted);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .keyword-list li:hover {
+            background-color: var(--secondary-color);
+            color: #FFFFFF;
+        }
+
+        /* FAQ 아코디언 스타일 */
+        .faq-wrapper {
+            margin-top: 50px;
+        }
+
+        .faq-item {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFFFFF;
+            transition: background-color 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: #F8FAFC;
+        }
+
+        .faq-question::after {
+            content: "▼";
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            transition: transform 0.2s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            background-color: #F8FAFC;
+            border-top: 0px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 1000px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* 신뢰도 및 출처 링크 영역 */
+        .reference-box {
+            background-color: #F1F5F9;
+            border-left: 4px solid var(--secondary-color);
+            padding: 25px;
+            margin-top: 50px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .reference-box h4 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .reference-box ul {
+            list-style: square;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .reference-box li {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+
+        .reference-box a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .reference-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* 푸터 영역 */
+        footer {
+            background-color: var(--primary-color);
+            color: #94A3B8;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 5px solid var(--secondary-color);
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><a href="/">자동차보험료 만기일 조회 및 갱신 기간 다이렉트 비교 센터</a></h1>
+        </div>
+    </header>
+
     <main>
-      <h1>Home page</h1>
+        <!-- 인트로 배너 -->
+        <section class="intro-banner">
+            <div class="container">
+                <h2>2026년 자동차보험료 만기일 대비 자가 진단 및 갱신 요율 비교 가이드</h2>
+                <p>매년 돌아오는 자동차보험 갱신 시기를 놓쳐 과태료를 내고 계시진 않나요? 최적의 갱신 기간 분석과 연령대별, 차량 모델별 평균 비용 정보를 투명하게 전해드립니다.</p>
+            </div>
+        </section>
+
+        <!-- 대화형 자가 진단 및 예상 견적 계산 폼 (체류시간 극대화 요소) -->
+        <section class="container">
+            <div class="interactive-section">
+                <h3>내 자동차보험 만기일 기준 예상 요율 계산기</h3>
+                <form id="calcForm" onsubmit="calculatePremium(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="userAge">운전자 만 연령대 선택</label>
+                            <select id="userAge" required>
+                                <option value="">연령대를 선택하세요</option>
+                                <option value="21">만 21세 이상 (대학생, 사회초년생)</option>
+                                <option value="26">만 26세 이상 (신규 가입 및 운전경력 초기)</option>
+                                <option value="30">만 30세 이상 (안정적인 요율 구간 진입)</option>
+                                <option value="38">만 38세 이상 (패밀리카 운용 최적 시기)</option>
+                                <option value="45">만 45세 이상 (최저 요율 혜택 가능 연령)</option>
+                                <option value="50">만 50세 이상 (중장년층 안정 요율)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="carModel">소유 차량 종류 선택</label>
+                            <select id="carModel" required>
+                                <option value="">차종을 선택하세요</option>
+                                <option value="avante">현대 아반떼 (준중형 베스트셀러)</option>
+                                <option value="grandeur">현대 그랜저 (중대형 대표 세단)</option>
+                                <option value="sorento">기아 쏘렌토 (인기 중형 패밀리 SUV)</option>
+                                <option value="palisade">현대 팰리세이드 (대형 SUV 군)</option>
+                                <option value="g80">제네시스 G80 (럭셔리 프리미엄 세단)</option>
+                                <option value="bmw5">BMW 5시리즈 (수입차 대표 라인업)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="expirationDate">예상 보험 만기일 구분</label>
+                            <select id="expirationDate" required>
+                                <option value="">만기 잔여일수를 선택하세요</option>
+                                <option value="within30">만기일 30일 이내 (즉시 비교 갱신 가능)</option>
+                                <option value="within60">만기일 31일 ~ 60일 이내 (사전 견적 설계 기간)</option>
+                                <option value="over60">만기일 60일 초과 (기존 계약 유지 단계)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="discountType">가장 관심 있는 할인 특약</label>
+                            <select id="discountType" required>
+                                <option value="mileage">마일리지 주행거리 할인 특약</option>
+                                <option value="tmap">티맵 Tmap 및 카카오내비 안전점수 할인</option>
+                                <option value="child">자녀 할인 및 부부한정 범위 제한</option>
+                                <option value="blackbox">블랙박스 및 첨단 안전장치 장착 할인</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="currentProvider">현재 유지 중인 보험 브랜드</label>
+                            <select id="currentProvider">
+                                <option value="samsung">삼성화재 다이렉트</option>
+                                <option value="hyundai">현대해상 하이카</option>
+                                <option value="db">DB손해보험 프로미</option>
+                                <option value="kb">KB손해보험 다이렉트</option>
+                                <option value="etc">기타 중소형사 및 신규 가입</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mileageValue">연간 평균 예상 주행거리 (km)</label>
+                            <input type="number" id="mileageValue" placeholder="예: 8000" min="100" max="100000" required>
+                        </div>
+                        <button type="submit" class="calc-btn">내 만기일 맞춤 예상 비용 및 할인 분석 결과 보기</button>
+                    </div>
+                </form>
+
+                <div id="resultBox" class="calc-result">
+                    <h4 id="resultTitle">자가 분석 맞춤형 시뮬레이션 결과</h4>
+                    <p id="resultText"></p>
+                    <p id="resultTip" style="font-weight: 500; font-size: 0.95rem; margin-top: 10px;"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 핵심 본문 및 정보 수집 최적화 텍스트 -->
+        <section class="container main-content">
+            
+            <section class="keyword-box">
+                <h3>함께 많이 찾는 자동차보험료 만기일 관련 주요 키워드</h3>
+                <ul class="keyword-list">
+                    <li>#자동차보험료만기일</li>
+                    <li>#다이렉트자동차보험비교</li>
+                    <li>#보험만기과태료</li>
+                    <li>#나이대별보험료비교</li>
+                    <li>#아반떼자동차보험비용</li>
+                    <li>#그랜저보험료견적</li>
+                    <li>#수입차보험료절약</li>
+                    <li>#티맵할인특약조건</li>
+                    <li>#현금지원사은품이벤트</li>
+                    <li>#네이버페이보험혜택</li>
+                    <li>#토스자동차보험비교</li>
+                    <li>#챗지피티추천보험</li>
+                </ul>
+            </section>
+
+            <h2 id="sec1">1. 자동차보험료 만기일 관리와 갱신 기간의 중요성</h2>
+            <p>
+                자동차 소유자에게 의무적으로 부과되는 책임보험은 법적 의무 사항입니다. 많은 운전자분들이 바쁜 일상 속에서 본인의 <strong>자동차보험료 만기일</strong>을 미처 파악하지 못해 당황하는 경우가 빈번하게 발생합니다. 자동차보험의 갱신 가능 기간은 보통 기존 계약의 <strong>만기일 30일 전</strong>부터 시작됩니다. 이 시점부터 국내의 내로라하는 주요 손해보험 브랜드의 견적 조회 서비스를 자유롭게 이용할 수 있게 되며, 온라인 계산기 기능을 통해 본인의 실시간 예상 보험료를 정확히 산출해 볼 수 있습니다.
+            </p>
+            <p>
+                만기일을 놓쳐 단 하루라도 무보험 상태가 될 경우, 정부에서 부과하는 무서운 과태료 행정 처분을 받게 됩니다. 개인용 차량의 경우 초과 첫날부터 금액이 가파르게 누적되기 때문에 갱신 기간이 시작되는 만기 30일 전부터 미리 다이렉트 비교 사이트를 방문하여 가장 저렴한곳이나 제일 싼곳을 알아보는 것이 경제적으로 매우 이득입니다. 최근에는 카카오톡, 토스, 네이버 등 핀테크 플랫폼 내의 간편 비교 메뉴를 활용하는 운전자가 급증하고 있습니다.
+            </p>
+
+            <h2 id="sec2">2. 만기일 도과 시 발생하는 과태료 및 불이익 요약</h2>
+            <p>
+                자동차손해배상 보장법 제5조에 의거하여 의무보험에 가입되어 있지 않은 차량을 운행하거나 방치하는 경우 아래와 같은 과태료가 철저하게 부과됩니다. 과태료의 수준은 가입 누락 기간이 늘어날수록 급격히 불어나기 때문에 세심한 달력 체크가 권장됩니다.
+            </p>
+
+            <div class="table-responsive">
+                <table>
+                    <caption>표 1. 2026년 기준 개인용 자동차보험 미가입 기간별 과태료 부과 기준</caption>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>미가입 기간 10일 이내</th>
+                            <th>10일 초과 후 매 1일당 추가액</th>
+                            <th>법정 최고 한도 금액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>대인배상 I (인적 피해 책임)</td>
+                            <td>10,000원</td>
+                            <td>6,000원</td>
+                            <td>600,000원</td>
+                        </tr>
+                        <tr>
+                            <td>대물배상 (물적 피해 책임)</td>
+                            <td>5,000원</td>
+                            <td>2,000원</td>
+                            <td>300,000원</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>개인용 승용차 합계액</td>
+                            <td>15,000원</td>
+                            <td>8,000원</td>
+                            <td class="highlight-text">총 900,000원</td>
+                        </tr>
+                        <tr>
+                            <td>영업용 및 화물차량 합계액</td>
+                            <td>65,000원</td>
+                            <td>하루당 최대 20,000원</td>
+                            <td class="highlight-text">총 2,300,000원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                만기일 경과로 인한 과태료 부과는 단순한 경고 수준을 넘어섭니다. 무보험 차량 상태에서 도로 위를 누비다 적발되거나 단속 카메라에 포착될 경우 1년 이하의 징역형에 처해질 수도 있으며, 이 기간 내 사고가 터지면 피해 구제를 온전히 개인 사비로 감당해야 하므로 가정이 파탄에 이르는 지름길이 될 수 있습니다. 디시, 보배드림, 펨코, 에펨코리아와 같은 유명 온라인 커뮤니티의 실제 내돈내산 가입 누락 후기에서도 단 몇만 원 아끼려다 백만 원 단위의 벌금과 대물 보상 수리비를 변제했다는 뼈아픈 수기를 쉽게 목격할 수 있습니다.
+            </p>
+
+            <h2 id="sec3">3. 2026년 기준 연령대별 및 국산/수입 차종별 평균 자동차보험료 분석</h2>
+            <p>
+                차주 연령과 운전하는 차량의 등급, 배기량에 따라 산출되는 기본 보험료는 극명한 차이점을 보입니다. 일반적으로 만 21세 이하 혹은 사회 초년생인 만 26세 이하 구간의 신규 운전자는 사고 이력이 쌓이지 않았고 손해율 위험도가 가장 높게 분석되어 보험 가격이 상상을 초월할 정도로 비싸게 책정됩니다. 반면 운전이 능숙해지는 만 30대, 만 38대, 만 45대 장년층으로 올라갈수록 평균 예상 견적은 점차 70만 원선 안팎으로 대폭 인하됩니다.
+            </p>
+
+            <div class="table-responsive">
+                <table>
+                    <caption>표 2. 2026년 차종 및 연령대별 평균 예상 연간 다이렉트 보험료 비교 (3년 무사고, 자차 담보 포함)</caption>
+                    <thead>
+                        <tr>
+                            <th>대상 차종 종류 및 브랜드</th>
+                            <th>만 21세 이하 평균 (원)</th>
+                            <th>만 26세 이상 평균 (원)</th>
+                            <th>만 30대 중반 평균 (원)</th>
+                            <th>만 45세 이상 평균 (원)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>현대 아반떼 (준중형)</td>
+                            <td>1,850,000</td>
+                            <td>980,000</td>
+                            <td class="highlight-text">640,000</td>
+                            <td>520,000</td>
+                        </tr>
+                        <tr>
+                            <td>현대 그랜저 (대형 세단)</td>
+                            <td>2,200,000</td>
+                            <td>1,150,000</td>
+                            <td>820,000</td>
+                            <td>710,000</td>
+                        </tr>
+                        <tr>
+                            <td>기아 쏘렌토 (중형 SUV)</td>
+                            <td>2,100,000</td>
+                            <td>1,080,000</td>
+                            <td>780,000</td>
+                            <td>660,000</td>
+                        </tr>
+                        <tr>
+                            <td>제네시스 G80 (고가 국산)</td>
+                            <td>2,800,000</td>
+                            <td>1,550,000</td>
+                            <td>1,120,000</td>
+                            <td>980,000</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>BMW 5시리즈 (수입 프리미엄)</td>
+                            <td>3,400,000</td>
+                            <td>1,900,000</td>
+                            <td>1,380,000</td>
+                            <td>1,210,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                위 표에서 체감할 수 있듯이 수입 브랜드 모델인 BMW 5시리즈의 경우 부품 공급 가격과 공임비가 비싸기 때문에 대인/대물뿐 아니라 자차(자기차량손해) 담보 부분에서 국산 차종 대비 몇십만 원 이상의 차이점을 야기합니다. 연령별 등락폭과 모델 특성이 한데 맞물리기 때문에 나만의 완벽한 포트폴리오를 구성하기 위해서는 전문 설계 업체의 대면 컨설팅 상담을 받아보는 것도 좋으나, 수수료가 일절 배제되는 인터넷 온라인 다이렉트 직접 비교 계산 방식을 이용하는 것이 비용 차원에서 가장 합리적이며 제일 싼곳을 선점하는 장점을 누릴 수 있습니다.
+            </p>
+
+            <h2 id="sec4">4. 다이렉트 자동차보험 브랜드별 현금지원 및 사은품 이벤트 공략</h2>
+            <p>
+                새롭게 자동차보험에 가입하는 신규 운전자뿐만 아니라 매년 만기일이 도래해 기존 보험사를 다른 곳으로 이동하려는 환승 가입자들의 눈길을 사로잡는 것은 바로 다채로운 <strong>사은품, 현금지원, 지원금 이벤트</strong>입니다. 주요 국내 손해보험 전문 제휴사들은 신규 고객 모집을 위해 자사 다이렉트 홈페이지를 비롯해 네이버, 카카오톡, 토스, 구글 모바일 앱 등 다채로운 채널을 통해 마케팅 경쟁을 펼치고 있습니다.
+            </p>
+            <ul>
+                <li><strong>간편 조회 포인트 적립 혜택:</strong> 보험사 가입 여부와 관계없이 만기일 30일 이내에 단지 예상 보험료 계산기로 견적을 설계해 보는 것만으로도 모바일 주유권, 해피머니 상품권, 네이버페이 1만 포인트 등을 가볍게 지급해 주는 제휴 이벤트가 매우 활발합니다. 3~4개 주요 메이저 브랜드의 요율을 차례대로 단순 조회하기만 해도 도합 3만 원 이상의 소소한 이득을 현금화할 수 있습니다.</li>
+                <li><strong>카드 청구 할인 및 제휴 캐시백:</strong> 현대카드, 신한카드, 삼성카드 등 카드 연계 이벤트를 활용해 다이렉트 보험료를 30만 원 이상 첫 결제하는 즉시 2만 원에서 최대 3만 원 수준의 금액을 청구 할인해 주거나 별도의 페이백 상품권으로 돌려주는 전문 혜택입니다.</li>
+                <li><strong>네이버페이 및 토스 앱 경유의 장단점:</strong> 핀테크 공룡 앱을 경유해 가입하면 간편 결제가 가능하며 즉각적인 포인트 적립이 보장되므로 추천할 만합니다. 단점은 개별 손해보험사 공식 이벤트와 지급 기준이 상이할 수 있으므로 가입 버튼을 누르기 전 어떤 쪽의 현금 혜택이 내 지갑에 더욱 유리한지 면밀히 비교해 봐야 한다는 점입니다.</li>
+            </ul>
+
+            <h2 id="sec5">5. AI 기술 및 핀테크 플랫폼을 접목한 똑똑한 보험료 비교법</h2>
+            <p>
+                현재 2026년 보험 시장은 AI(인공지능) 기반의 맞춤형 자산 컨설팅 추천 기술이 대세를 이루고 있습니다. 단순히 지인이나 오프라인 설계사의 감에 의존하는 시대는 저물었습니다. 최근 스마트한 소비자들은 제미나이(Gemini)나 챗지피티(ChatGPT) 같은 정교한 대형 언어 모델과 지능형 AI 솔루션을 활용하여 본인의 실제 주행 빈도, 출퇴근 경로, 선호 담보 수준을 업로드하고 실질적인 요율 분석을 사전에 컨설팅받기도 합니다.
+            </p>
+            <p>
+                이와 더불어 토스, 네이버페이, 카카오페이 등 모바일 플랫폼에 탑재된 통합 비교 앱 및 어플은 사용자의 실시간 금융 데이터 및 마이데이터를 바탕으로 단 1초 만에 국내 주요 보험사 7곳 이상의 보험료 견적 순위를 최저가순으로 정렬하여 표시해 줍니다. 이러한 디지털 플랫폼 활용은 설계사 대면 영업 대비 평균 15% 이상 저렴한 다이렉트 할인을 온전히 확보할 수 있게 돕고, 가입 절차 역시 복잡한 서류 제출 없이 몇 번의 지문 인증만으로 종결되어 대단히 편리합니다.
+            </p>
+
+            <h2 id="sec6">6. 실제 이용자들이 들려주는 리얼 커뮤니티 "내돈내산" 후기 분석</h2>
+            <p>
+                각종 전문 포털 및 매체 등에서 일방적으로 노출하는 광고성 배너에 피로감을 느낀 고객들이라면 보배드림, 디시인사이드 차 갤러리, 에펨코리아(펨코) 등 차주들이 활발하게 교류하는 온라인 소통 창구에서 리얼 가입 후기를 참조하는 방법을 적극 권장합니다.
+            </p>
+            <p>
+                해당 포럼에서 유저들이 입을 모아 말하는 꿀팁은 다음과 같습니다. <em>"마일리지가 연 5천km 미만으로 짧다면 환급률이 30%를 상회하는 브랜드가 최선이다", "티맵 안전점수가 80점 이상을 유지하고 있다면 반드시 UBI 특약을 수동 설정해 12%에 달하는 추가 할인을 영수증에 녹여내야 한다", "자차 담보를 아예 빼버리면 가입비는 대폭 낮아지지만 연식이 얼마 되지 않은 그랜저나 제네시스 같은 프리미엄 세단 혹은 수입차 차종들은 도로 위 돌발 사고 시 수백만 원에 달하는 정비 비용을 자비로 정산해야 하므로 정신 건강을 위해 가입하는 것을 강력히 추천한다"</em> 등 생생한 조언을 전하고 있습니다.
+            </p>
+
+            <div class="reference-box">
+                <h4>자동차보험 만기일 조회 관련 공식 신뢰 출처</h4>
+                <ul>
+                    <li><a href="https://www.fss.or.kr" target="_blank" rel="noopener">금융감독원 (FSS)</a> - 대한민국 금융시장 감독 및 보험 약관 정보 제공</li>
+                    <li><a href="https://www.kidi.or.kr" target="_blank" rel="noopener">보험개발원 (KIDI)</a> - 차종별 손해율 정보 및 차량가액 등급 분석 서비스</li>
+                    <li><a href="https://www.gov.kr" target="_blank" rel="noopener">정부24 (GOV)</a> - 자동차 등록 원부 및 과태료 납부 관련 행정포털</li>
+                    <li><a href="https://www.koroad.or.kr" target="_blank" rel="noopener">도로교통공단 (KoRoad)</a> - 안전 운전 및 교통 안전수칙, 사고 통계 조사 기관</li>
+                    <li><a href="https://namu.wiki/w/%EC%9E%90%EB%8F%99%EC%B0%A8%EB%B3%B4%ED%97%98" target="_blank" rel="nofollow noopener">나무위키 자동차보험 문서</a> - 소비자들이 가꾼 대중적인 자동차보험 약관 해설 지식고</li>
+                    <li><a href="https://www.consumer.go.kr" target="_blank" rel="noopener">한국소비자원 (KCA)</a> - 보험 약관 불이익 대처 및 소비자 권익 증진 정보</li>
+                </ul>
+            </div>
+
+            <!-- 자주 묻는 질문 (FAQ) -->
+            <div class="faq-wrapper">
+                <h2>자동차보험료 만기일 관련 자주 묻는 질문 (Q&A)</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q1. 기존 보험에 가입된 상태에서 만기일 이전에 타 보험사로 갈아타면 불이익이 생기나요?</div>
+                    <div class="faq-answer">
+                        전혀 그렇지 않습니다. 기존 계약이 만료되는 날짜를 타사 가입 시 시작일로 지정하기만 하면 이중 청구나 중복 가입 없이 매끄럽게 연결됩니다. 오히려 만기일 한 달 전부터 타사 다이렉트 요율과 할인 특약, 신규 혜택 상품권 이벤트를 탐색하며 저렴한곳을 선점해 계약을 예치해 두는 편이 경제적으로 훨씬 안정적입니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q2. 만 연령 한정 특약과 부부 한정 등 범위 변경은 만기일 당일에도 수정이 가능한가요?</div>
+                    <div class="faq-answer">
+                        운전자 범위나 연령 한정 특약 등은 보험 계약 기간 도중에도 언제든지 해당 보험사 공식 홈페이지나 콜센터 앱을 통해 '임시운전자 특약' 혹은 '계약 승계 변경' 메뉴를 사용해 하루 단위로도 바꾸실 수 있습니다. 다만 만기일 갱신 설계 단계에서 미리 꼼꼼히 체크하여 범위를 극단적으로 줄여 놓는 것이 연간 고정 비용을 최대 수십만 원 아끼는 비결입니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q3. 사고 경력이 있는데 갱신 시 만기일에 할증이 얼마나 붙을까요?</div>
+                    <div class="faq-answer">
+                        직전 3년 동안의 물적, 인적 사고 내용에 따라 할증 등급이 평가됩니다. 대물 손해액이 가입 시 설정한 물적할증기준금액(예: 200만 원)을 넘어서면 할증 등급이 떨어져 요율이 대폭 가산되며, 미만인 경우에도 무사고 할인이 장기 유예되어 결과적으로 보험료 인상 압박을 겪게 됩니다. 이 경우일수록 다이렉트 비교 사이트마다 사고 경력자에게 부과하는 특약 할증률 배정이 약간씩 다르므로 반드시 철저한 비교 계산이 이루어져야 합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q4. 마일리지 할인 환급금은 만기일 지나고 신청해도 되나요?</div>
+                    <div class="faq-answer">
+                        네, 가능합니다. 대부분의 보험사는 기존 계약이 종료된 날을 기준으로 약 10일에서 길게는 30일 이내에 계기판 전면 및 후면 사진을 촬영해 모바일 앱으로 접수하면 환급 절차를 완료해 줍니다. 갱신 계약을 타사로 이동했다 하더라도 기존에 가입했었던 전임 보험사를 통해 마일리지 환급금을 통장으로 무리 없이 돌려받을 수 있습니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q5. 수입차 모델과 프리미엄 SUV의 자차 가액 평가는 언제 기준인가요?</div>
+                    <div class="faq-answer">
+                        자차 가액은 매년 분기별로 보험개발원(KIDI)에서 주기적으로 갱신하고 고지하는 차량 기준 가액표를 바탕으로 설정됩니다. 연식이 지날수록 차량 감가상각이 적용되어 차량가액이 낮아지고 이에 비례하여 만기 시점의 자차 보험료 금액도 자연스럽게 인하됩니다. 하지만 희소 가치가 있는 수입 모델이나 튜닝 항목이 가미된 차량이라면 가입 단계에서 세부 사항을 명확히 입력해야 긴밀한 보상을 책임받을 수 있습니다.
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
-  </body>
-</html>
+
+    <!-- 아코디언 인터랙션 및 계산기 기능 스크립트 -->
+    <script>
+        // 1. FAQ 아코디언 스크립트
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+
+        // 2. 가상의 다이렉트 자가 시뮬레이션 계산 함수 (체류시간 증진 목적)
+        function calculatePremium(event) {
+            event.preventDefault();
+
+            const age = document.getElementById('userAge').value;
+            const model = document.getElementById('carModel').value;
+            const exp = document.getElementById('expirationDate').value;
+            const discount = document.getElementById('discountType').value;
+            const mileage = parseFloat(document.getElementById('mileageValue').value);
+
+            if (!age || !model || !exp || !mileage) {
+                alert('모든 입력 값을 선택하고 작성해 주세요.');
+                return;
+            }
+
+            const resultBox = document.getElementById('resultBox');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultText = document.getElementById('resultText');
+            const resultTip = document.getElementById('resultTip');
+
+            // 기본 임의 값 책정 공식 적용
+            let basePremium = 1000000;
+            let modelName = "";
+
+            switch (model) {
+                case "avante":
+                    basePremium = 650000;
+                    modelName = "현대 아반떼";
+                    break;
+                case "grandeur":
+                    basePremium = 850000;
+                    modelName = "현대 그랜저";
+                    break;
+                case "sorento":
+                    basePremium = 800000;
+                    modelName = "기아 쏘렌토";
+                    break;
+                case "palisade":
+                    basePremium = 950000;
+                    modelName = "현대 팰리세이드";
+                    break;
+                case "g80":
+                    basePremium = 1250000;
+                    modelName = "제네시스 G80";
+                    break;
+                case "bmw5":
+                    basePremium = 1500000;
+                    modelName = "BMW 5시리즈";
+                    break;
+            }
+
+            // 연령별 배율
+            let ageMultiplier = 1.0;
+            let ageLabel = "";
+            if (age === "21") { ageMultiplier = 2.2; ageLabel = "만 21세 이상"; }
+            else if (age === "26") { ageMultiplier = 1.5; ageLabel = "만 26세 이상"; }
+            else if (age === "30") { ageMultiplier = 1.0; ageLabel = "만 30세 이상"; }
+            else if (age === "38") { ageMultiplier = 0.95; ageLabel = "만 38세 이상"; }
+            else if (age === "45") { ageMultiplier = 0.88; ageLabel = "만 45세 이상"; }
+            else if (age === "50") { ageMultiplier = 0.85; ageLabel = "만 50세 이상"; }
+
+            let calculated = basePremium * ageMultiplier;
+
+            // 마일리지 할인폭 연산
+            let mileageDiscountRate = 0;
+            if (mileage <= 3000) mileageDiscountRate = 0.32;
+            else if (mileage <= 5000) mileageDiscountRate = 0.24;
+            else if (mileage <= 10000) mileageDiscountRate = 0.15;
+            else if (mileage <= 15000) mileageDiscountRate = 0.06;
+
+            let finalPremium = calculated * (1 - mileageDiscountRate);
+            
+            // 포맷팅
+            const originStr = Math.round(calculated).toLocaleString();
+            const finalStr = Math.round(finalPremium).toLocaleString();
+            const saveStr = Math.round(calculated - finalPremium).toLocaleString();
+
+            resultBox.style.display = "block";
+            resultTitle.textContent = `${ageLabel} 연령 기준 - ${modelName} 분석 리포트`;
+            
+            let htmlDesc = `기본 예상 연간 다이렉트 요율은 약 <strong>${originStr}원</strong> 선으로 파악됩니다. `;
+            if (mileageDiscountRate > 0) {
+                htmlDesc += `고객님의 주행거리(${mileage.toLocaleString()}km)에 맞추어 주행거리 특약을 적용하면 약 <strong>${(mileageDiscountRate*100)}%</strong> 할인이 추가 반영되어 <strong>최종 약 ${finalStr}원</strong> 수준으로 대폭 낮아집니다. (예상 절감 금액: 약 ${saveStr}원)`;
+            } else {
+                htmlDesc += `연간 주행거리가 긴 편이므로 마일리지 특약 적용이 다소 미미하나 다른 첨단 안전장치 할인이나 티맵 점수 특약을 접목하면 추가적인 할인을 기대해 볼 수 있습니다.`;
+            }
+
+            resultText.innerHTML = htmlDesc;
+
+            // 팁 멘트
+            if (exp === "within30") {
+                resultTip.innerHTML = `<strong>꿀팁 알림:</strong> 현재 고객님은 만기일이 30일 이내에 해당되어 <strong>즉시 다이렉트 신규 가입 및 환승 이벤트 혜택 적용 대상</strong>입니다. 각 보험사의 네이버페이 1만원 조회 적립 이벤트를 활용하시면 조회만으로도 최대 3만원 상당의 모바일 상품권을 챙기실 수 있습니다.`;
+            } else {
+                resultTip.innerHTML = `<strong>꿀팁 알림:</strong> 만기가 다소 남아있는 사전 검토 시기입니다. 갱신 도래 30일 전이 되는 시점에 주요 금융 포털(토스, 카카오톡, 네이버페이)의 간편 알림받기 설정을 신청해 놓으시면 매력적인 현금지원 캐시백 제휴 프로모션 링크를 카톡 등으로 빠르게 공유받으실 수 있어 더욱 저렴한곳 가입이 편해집니다.`;
+            }
+
+            // 부드러운 스크롤 이동
+            resultBox.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+  
